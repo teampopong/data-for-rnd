@@ -36,7 +36,7 @@
     <tr>
         <td>pledges.csv</td>
         <td>19대 총선 공약 데이터</td>
-        <td>candidacy&#95;id, pledge</td>
+        <td>candidacy&#95;id, name, pledge</td>
         <td>popongdb</td>
         <td>2012-04-11</td>
     </tr>

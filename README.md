@@ -20,7 +20,7 @@
         <td>19대 국회의원 출마/당선 데이터</td>
         <td>candidacy&#95;id, person&#95;id, name, birthday, party, assembly&#95;id, is&#95;elected, district</td>
         <td>popongdb</td>
-        <td>2012-04-11</td>
+        <td>2013-04-24</td>
     </tr>
     <tr>
         <td>cosponsorship.csv</td>
@@ -38,10 +38,10 @@
     </tr>
     <tr>
         <td>pledges.csv</td>
-        <td>19대 총선 공약 데이터</td>
+        <td>19대 국회의원 후보 공약 데이터</td>
         <td>candidacy&#95;id, name, pledge</td>
         <td>popongdb</td>
-        <td>2012-04-11</td>
+        <td>2013-04-24</td>
     </tr>
 </tbody>
 </table>
@@ -61,3 +61,8 @@
     - `sponsorship`과 `cosponsorshop`의 상관계수는 약 0.6
     - 이재영 ([새누리당, 경기도 평택시](http://pokr.kr/person/19561115) / [새누리당, 경기도 김포시](http://pokr.kr/person/197515)), 김영주 ([민주당, 서울특별시 영등포구](http://pokr.kr/person/195526) / [새누리당, 비례대표](http://pokr.kr/person/19541125)) 의원은 동명이인으로, 정상집계되지 않음
     - [유성걸](http://pokr.kr/person/19571122) 의원은 이름이 선관위에는 '유성걸', 국회에는 '류성걸'으로 등록되어 있어, 이름이 서로 달라 정상집계되지 않음.
+
+### pledges.csv
+- 특이사항
+    - 2013년 상반기 재보궐선거 데이터 포함
+

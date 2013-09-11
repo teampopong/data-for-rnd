@@ -13,23 +13,43 @@
 </thead>
 <tbody>
     <tr>
+        <td>candidacies.csv</td>
+        <td>19대 국회의원 출마/당선 데이터</td>
+        <td>candidacy&#95;id, person&#95;id, name, birthday, party, assembly&#95;id, is&#95;elected, district</td>
+        <td>popongdb</td>
+        <td>2012-04-11</td>
+    </tr>
+    <tr>
         <td>cosponsorship.csv</td>
         <td>19대 국회의 대표/공동발의 횟수 데이터</td>
-        <td>person_id, name, gender, party, assembly_id, sponsorship, cosponsorship</td>
+        <td>person&#95;id, name, gender, party, assembly&#95;id, sponsorship, cosponsorship</td>
         <td>popongdb</td>
         <td>2013-07-29</td>
     </tr>
     <tr>
         <td>migrations.csv</td>
         <td>19대 국회의원의 정당 이동 데이터</td>
-        <td>person_id, name, party, start_date, end_date</td>
+        <td>person&#95;id, name, party, start&#95;date, end&#95;date</td>
         <td>열려라국회</td>
         <td>2012-09-09</td>
+    </tr>
+    <tr>
+        <td>pledges.csv</td>
+        <td>19대 총선 공약 데이터</td>
+        <td>candidacy&#95;id, pledge</td>
+        <td>popongdb</td>
+        <td>2012-04-11</td>
     </tr>
 </tbody>
 </table>
 
 ## Comments
+### candidacies.csv
+- 변수설명
+    - `candidacy_id`: 출마 레코드 ID. `pledges.csv`와 결합(join)하기 위해 필요
+- 특이사항
+    - 2013년 상반기 재보궐선거 데이터 포함
+
 ### cosponsorship.csv
 - 변수설명
     - `sponsorship`: 19대 국회에서 의안을 대표발의한 횟수

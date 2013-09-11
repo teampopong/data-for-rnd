@@ -1,5 +1,8 @@
 # Data for Political R&D
 
+이 저장소에 공개된 데이터는 [크리에이티브 커먼즈 저작자표시 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.ko) 라이선스에 따라 이용하실 수 있습니다.<br>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.ko"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+
 ## Overview
 <table>
 <thead>

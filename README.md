@@ -1,6 +1,6 @@
 # Data for Political R&D
 
-이 저장소에 있는 데이터는 [중앙선거관리위원회](http://www.nec.go.kr)과 [국회 의안정보시스템](http://likms.assembly.go.kr/bill/)에서 데이터를 수집하여 후처리한 것입니다.
+이 저장소에 있는 데이터는 [중앙선거관리위원회](http://www.nec.go.kr)과 [국회 의안정보시스템](http://likms.assembly.go.kr/bill/)에서 데이터를 수집하여 후처리한 것입니다. (일부 열려라 국회에서 수집)
 개발 및 연구의 편의를 위해 공개하니 널리 이용해주시기 바라며 문의사항, 제안사항 또는 오류가 있는 경우 [이슈제기](https://github.com/teampopong/data-for-rnd/issues)를 해주시기 바랍니다.
 
 데이터 수집에 이용된 코드는 [이 곳](https://github.com/teampopong/crawlers)에서 보실 수 있습니다.
@@ -20,13 +20,13 @@
     <tr>
         <th>candidacies.csv</th>
         <td>1-19대 국회의원 선거 후보자 데이터</td>
-        <td>popongdb</td>
+        <td>중앙선거관리위원회</td>
         <td>2013-04-24</td>
     </tr>
     <tr>
         <th>cosponsorship.csv</th>
         <td>19대 국회의 대표/공동발의 횟수 데이터</td>
-        <td>popongdb</td>
+        <td>국회 의안정보시스템</td>
         <td>2013-07-29</td>
     </tr>
     <tr>
@@ -38,7 +38,7 @@
     <tr>
         <th>pledges.csv</th>
         <td>19대 국회의원 후보 공약 데이터</td>
-        <td>popongdb</td>
+        <td>중앙선거관리위원회</td>
         <td>2013-04-24</td>
     </tr>
 </tbody>

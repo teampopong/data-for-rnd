@@ -1,6 +1,6 @@
 # Data for Political R&D
 
-이 저장소에 있는 데이터는 [중앙선거관리위원회](http://www.nec.go.kr)과 [국회 의안정보시스템](http://likms.assembly.go.kr/bill/)에서 데이터를 수집하여 후처리한 것입니다.<br>
+이 저장소에 있는 데이터는 [중앙선거관리위원회](http://www.nec.go.kr)과 [국회 의안정보시스템](http://likms.assembly.go.kr/bill/)에서 데이터를 수집하여 후처리한 것입니다.
 개발 및 연구의 편의를 위해 공개하니 널리 이용해주시기 바라며 문의사항, 제안사항 또는 오류가 있는 경우 [이슈제기](https://github.com/teampopong/data-for-rnd/issues)를 해주시기 바랍니다.
 
 데이터 수집에 이용된 코드는 [이 곳](https://github.com/teampopong/crawlers)에서 보실 수 있습니다.
@@ -102,6 +102,9 @@
         <tr><td>19521135</td><td>한기호</td><td>한나라당</td><td>2012-02</td><td>2010-07</td></tr>
     </table>
 
+- 특이사항
+    - `start_date` 또는 `end_date`가 null인 경우가 있음.
+
 ### pledges.csv
 
 - 3 columns, 1221 rows (on 246 unique `candidate_id`)
@@ -118,8 +121,16 @@
     - 인당 약 5개의 대표 공약이 있음.
 
 
+## Showcase
+
+이 데이터셋을 이용해 아래와 같은 서비스가 만들어졌습니다.
+(당신의 서비스 또는 연구도 자랑해주세요!)
+
+- 2013-10-30 안드로이드 앱 "[지켜본다](https://play.google.com/store/apps/details?id=org.sicamp.isee)"
+
 ## License
 
-이 저장소에 공개된 데이터는 [크리에이티브 커먼즈 저작자표시 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.ko) 라이선스에 따라 이용하실 수 있습니다.<br>
+이 저장소에 공개된 데이터는 [크리에이티브 커먼즈 저작자표시 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.ko) 라이선스에 따라 이용하실 수 있습니다. (즉, 팀포퐁이 데이터의 저작자임을 명시하기만 하면 수정, 배포를 마음껏 하실 수 있습니다.)
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.ko"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>

@@ -52,7 +52,7 @@
 
 ## Description
 ### 공통변수
-- `person_id`: 인물 고유번호. 성명 및 생년이 같은 경우 동일 인물로 판단하고 ID는 생년 + 랜덤 숫자로 생성. 이 고유번호로 [대한민국 정치의 모든 것](http://pokr.kr)의 인물페이지로 접근 가능. (i.e., http://pokr.kr/person/`person_id`)
+- `person_id`: 인물 고유번호. 성명 및 생년이 같은 경우 동일 인물로 판단하고 ID는 생년 + 랜덤 숫자로 생성. 이 고유번호로 [대한민국 정치의 모든 것](http://pokr.kr)의 인물페이지로 접근 가능. (i.e., `http://pokr.kr/person/[person_id]`)
 - `name`: 인물의 한글 성명. 동명이인이 있을 수 있음.
 
 ### assembly.csv
@@ -79,7 +79,7 @@
     - `pr_secrs`: 비서관.
     - `sc_secrs`: 비서.
     - `hobby`: 취미.
-    - `photo_id`: 사진 고유번호. (i.e., http://www.assembly.go.kr/photo/`photo_id`.jpg)
+    - `photo_id`: 사진 고유번호. (i.e., `http://www.assembly.go.kr/photo/[photo_id]`.jpg)
 
 - 특이사항
     - 이 데이터셋의 최신 및 상세한 버젼은 [이 곳](https://github.com/teampopong/data-assembly)에 있음. (매일 새로 업데이트)

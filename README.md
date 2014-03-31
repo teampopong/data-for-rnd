@@ -52,7 +52,6 @@
 
 ## Description
 ### 공통변수
-- `candidacy_id`: 후보등록 고유번호. 한 인물이 복수출마할 경우 두 개 이상의 값을 가짐.
 - `person_id`: 인물 고유번호. 성명 및 생년이 같은 경우 동일 인물로 판단하고 ID는 생년 + 랜덤 숫자로 생성. 이 고유번호로 [대한민국 정치의 모든 것](http://pokr.kr)의 인물페이지로 접근 가능. (i.e., http://pokr.kr/person/`person_id`)
 - `name`: 인물의 한글 성명. 동명이인이 있을 수 있음.
 
@@ -60,10 +59,10 @@
 - 18 columns, 298 rows
 - 변수설명
     <table>
-        <tr><td>name</td><td>name_cn</td><td>name_en</td><td>birth</td><td>party</td><td>district</td><td>committee</td><td>when_elected</td><td>off_phone</td><td>homepage</td><td>email</td><td>aides</td><td>pr_secrs</td><td>sc_secrs</td><td>hobby</td><td>photo</td></tr>
-        <tr><td>강기윤</td><td>姜起潤</td><td>KANG Gi Yun</td><td>1960-06-04</td><td>새누리당</td><td>경남 창원시성산구</td><td>안전행정위원회</td><td>19대</td><td>02-784-1322</td><td>http://www.강기윤.kr</td><td>ggotop@assembly.go.kr</td><td>강종길, 김태훈</td><td>박병규, 이순우</td><td>박응서, 안현성, 이유진</td><td></td><td>9770703</td></tr>
-        <tr><td>강기정</td><td>姜琪正</td><td>KANG Gi Jung</td><td>1964-12-03</td><td>새정치민주연합</td><td>광주 북구갑</td><td>정무위원회</td><td>17대, 18대, 19대</td><td>02-788-2666</td><td>http://kj21.org</td><td>okang@assembly.go.kr</td><td>장성훈, 정성학</td><td>김진열, 나원주</td><td>이열, 홍돈석, 정희은</td><td>등산/축구</td><td>9770275</td></tr>
-        <tr><td>강길부</td><td>姜吉夫</td><td>KANG Ghil Boo</td><td>1942-06-05</td><td>새누리당</td><td>울산 울주군</td><td>기획재정위원회</td><td>17대, 18대, 19대</td><td>02-788-2708</td><td>http://www.uljukang.org</td><td>shinmut@assembly.go.kr</td><td>정재원, 최성수</td><td>강원도, 차상윤</td><td>송경희, 박종석, 장경희</td><td></td><td>9770276</td></tr>
+        <tr><td>person_id</td><td>name</td><td>name_cn</td><td>name_en</td><td>birth</td><td>party</td><td>district</td><td>committee</td><td>when_elected</td><td>off_phone</td><td>homepage</td><td>email</td><td>aides</td><td>pr_secrs</td><td>sc_secrs</td><td>hobby</td><td>photo</td></tr>
+        <tr><td>19601167</td><td>강기윤</td><td>姜起潤</td><td>KANG Gi Yun</td><td>1960-06-04</td><td>새누리당</td><td>경남 창원시성산구</td><td>안전행정위원회</td><td>19대</td><td>02-784-1322</td><td>http://www.강기윤.kr</td><td>ggotop@assembly.go.kr</td><td>강종길, 김태훈</td><td>박병규, 이순우</td><td>박응서, 안현성, 이유진</td><td></td><td>9770703</td></tr>
+        <tr><td>1964154</td><td>강기정</td><td>姜琪正</td><td>KANG Gi Jung</td><td>1964-12-03</td><td>새정치민주연합</td><td>광주 북구갑</td><td>정무위원회</td><td>17대, 18대, 19대</td><td>02-788-2666</td><td>http://kj21.org</td><td>okang@assembly.go.kr</td><td>장성훈, 정성학</td><td>김진열, 나원주</td><td>이열, 홍돈석, 정희은</td><td>등산/축구</td><td>9770275</td></tr>
+        <tr><td>19421164</td><td>강길부</td><td>姜吉夫</td><td>KANG Ghil Boo</td><td>1942-06-05</td><td>새누리당</td><td>울산 울주군</td><td>기획재정위원회</td><td>17대, 18대, 19대</td><td>02-788-2708</td><td>http://www.uljukang.org</td><td>shinmut@assembly.go.kr</td><td>정재원, 최성수</td><td>강원도, 차상윤</td><td>송경희, 박종석, 장경희</td><td></td><td>9770276</td></tr>
     </table>
 
     - `name_cn`: 한자 이름.
@@ -96,6 +95,7 @@
         <tr><td>19186</td><td>19551154</td><td>김창근</td><td>19550507</td><td>통합진보당</td><td>19</td><td>f</td><td>"{대전광역시,대덕구}"</td></tr>
     </table>
 
+    - `candidacy_id`: 후보등록 고유번호. 한 인물이 복수출마한 경우 두 개 이상의 값을 가짐.
     - `birthday`: 출마 당시 후보자가 기재한 생년월일(YYmmdd). 예전 국회(1-10대)의 경우 데이터가 부정확한 경우가 있다고 보고됨.
     - `party`: 출마 당시 후보자의 소속 정당.
     - `assembly_id`: 출마 국회의원 선거 대수.
@@ -146,11 +146,13 @@
 - 3 columns, 1221 rows (on 246 unique `candidate_id`)
 - 변수설명
     <table>
-        <tr><td>candidacy_id</td><td>name</td><td>pledge</td></tr>
-        <tr><td>7643</td><td>강창희</td><td>안영동 스포츠과학단지 조성</td></tr>
-        <tr><td>7643</td><td>강창희</td><td>중앙로 문화예술 지구 명소화</td></tr>
-        <tr><td>7643</td><td>강창희</td><td>도청이전부지 대전시로 소유 이전 및 부지활용</td></tr>
+        <tr><td>person_id</td><td>candidacy_id</td><td>name</td><td>pledge</td></tr>
+        <tr><td>19461111</td><td>7643</td><td>강창희</td><td>안영동 스포츠과학단지 조성</td></tr>
+        <tr><td>19461111</td><td>7643</td><td>강창희</td><td>중앙로 문화예술 지구 명소화</td></tr>
+        <tr><td>19461111</td><td>7643</td><td>강창희</td><td>도청이전부지 대전시로 소유 이전 및 부지활용</td></tr>
     </table>
+
+    - `candidacy_id`: 후보등록 고유번호. 한 인물이 복수출마한 경우 두 개 이상의 값을 가짐.
 
 - 특이사항
     - 2013년 상반기 재보궐선거 (4월 24일) 데이터 포함.

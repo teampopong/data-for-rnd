@@ -21,7 +21,13 @@
         <th>assembly.csv</th>
         <td>19대 국회의원 데이터</td>
         <td>국회 의안정보시스템</td>
-        <td>2014-05-30</td>
+        <td>2014-03-30</td>
+    </tr>
+    <tr>
+        <th>bills/names.csv</th>
+        <td>1-19대 의안명</td>
+        <td>국회 의안정보시스템</td>
+        <td>2013-08-20</td>
     </tr>
     <tr>
         <th>candidacies.csv</th>
@@ -90,6 +96,23 @@
 - 특이사항
     - 이 데이터셋의 최신 및 상세한 버젼은 [이 곳](https://github.com/teampopong/data-assembly)에 있음. (매일 새로 업데이트)
     - 동명이인 없음.
+
+### bills/names.csv
+
+- 2 columns, 48191 rows
+- 변수설명
+    <table>
+        <tr><td>bill_id</td><td>bill_name</td></tr>
+        <tr><td>010002</td><td>국민생명보험과우편연금특별회계법안</td></tr>
+        <tr><td>010003</td><td>반민족행위처벌법안</td></tr>
+        <tr><td>010004</td><td>지방자치조직법안</td></tr>
+    </table>
+
+    - `bill_id`: 국회에서 제공하는 공식 의안 고유번호. 이 고유번호로 [대한민국 정치의 모든 것](http://pokr.kr)의 의안페이지로 접근 가능. (i.e., `http://pokr.kr/bill/[bill_id]`)
+    - `bill_name`: 의안명.
+- 특이사항
+    - 의안 고유번호는 17대 국회까지 6자리 숫자, 18대부터 7자리 숫자임.
+    - 인사청문요청안 등 특별 문서의 의안 고유번호는 'ZZ'로 시작.
 
 ### candidacies.csv
 - 8 columns, 19184 rows (on 12913 unique `person_id`)

@@ -43,9 +43,15 @@
     </tr>
     <tr>
         <th>pledges.csv</th>
-        <td>19대 국회의원 후보 공약 데이터</td>
+        <td>19대 국회의원 선거 후보 공약 데이터</td>
         <td>중앙선거관리위원회</td>
         <td>2013-04-24</td>
+    </tr>
+    <tr>
+        <th>parties/logos/</th>
+        <td>정당 로고</td>
+        <td>Wikipedia</td>
+        <td>2013-05-05</td>
     </tr>
 </tbody>
 </table>
@@ -158,6 +164,9 @@
     - 2013년 상반기 재보궐선거 (4월 24일) 데이터 포함.
     - 인당 약 5개의 대표 공약이 있음.
 
+### parties/logos/
+
+- 파일명은 정당 고유번호(`party_id`)로 되어 있으며 이는  `parties/parties.csv`에서 확인할 수 있음.
 
 ## Showcase
 

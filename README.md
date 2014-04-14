@@ -202,5 +202,8 @@
 
 이 저장소에 공개된 데이터는 [크리에이티브 커먼즈 저작자표시 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.ko) 라이선스에 따라 이용하실 수 있습니다. (즉, 팀포퐁이 데이터의 저작자임을 명시하기만 하면 수정, 배포를 마음껏 하실 수 있습니다.)
 
+위 데이터를 사용하여 논문을 작성할 경우, 아래 학회 발표자료를 인용해주시기 바랍니다.
+
+- Eunjeong Park, Cheol Kang, <a href="http://slid.es/e9t/2013-kswc">대한민국 정치의 모든 것: 쉽고 재밌는 일상 속 정치 만들기</a>, 5th Korean Semantic Web Conference, Nov 30, 2013.
 
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.ko"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>

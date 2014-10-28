@@ -193,10 +193,8 @@
 
 ## Showcase
 
-이 데이터셋을 이용해 아래와 같은 서비스가 만들어졌습니다.
+이 데이터셋을 이용해 [다양한 서비스](http://data.popong.com/#showcase)가 만들어졌습니다.
 (_당신의 서비스 또는 연구도 자랑해주세요!_)
-
-- 2013-10-30 안드로이드 앱 "[지켜본다](https://play.google.com/store/apps/details?id=org.sicamp.isee)"
 
 ## License
 
